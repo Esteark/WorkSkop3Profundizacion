@@ -1,0 +1,19 @@
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/mobile/image-hero.jpg);
+  padding: 10% 20px 10px 20px;
+  background-color: antiquewhite;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 2% 5% 10px 5%;
+    background-image: url(../../assets/desktop/image-hero.jpg);
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../vars.scss";
+.socialMedia2 {
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.iconsize {
+  width: 30px;
+  height: 30px;
+}
+
+.iconMenu1 {
+  background: url(../../assets/icon-facebook.svg);
+  @extend .iconsize;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.iconMenu2 {
+  background: url(../../assets/icon-twitter.svg);
+  @extend .iconsize;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+}
+.iconMenu3 {
+  background: url(../../assets/icon-pinterest.svg);
+  @extend .iconsize;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.iconMenu4 {
+  background: url(../../assets/icon-instagram.svg);
+  @extend .iconsize;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
