@@ -1,7 +1,9 @@
 import "./App.css";
-
+import {Article} from './components/Article/Article.jsx'
 function App() {
-  return <div className="App"></div>;
+  return <div className="App">
+    <Article/>
+  </div>;
 }
 
 export default App;
