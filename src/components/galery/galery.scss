@@ -7,11 +7,13 @@
 }
 
 .section2 {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   margin: 8% 0;
+  padding: 0 8%;
 }
 
 .section2 div:nth-child(2) {
@@ -56,8 +58,8 @@
 }
 
 .section2 div {
-  width: 70%;
-  gap: 21px;
+  width: 85%;
+  gap: 15px;
   display: flex;
   padding: 20px;
   align-items: center;
@@ -135,7 +137,7 @@
   background-size: cover;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .section2 div {
     width: 100%;
     padding: 10px;
@@ -212,5 +214,9 @@
     width: 95%;
     height: 160px;
     background-image: url(../../assets/mobile/image-fisheye.jpg);
+  }
+  .section2txt {
+    width: 100%;
+    padding: 0;
   }
 }
