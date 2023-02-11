@@ -1,0 +1,127 @@
+@import "../../vars.scss";
+
+.ul__menu {
+  background-color: $Black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  li {
+    color: $White;
+  }
+
+  &__active {
+    display: flex;
+  }
+  &__desactivate {
+    display: none;
+  }
+}
+
+// .ul__menu .ul__menu--active {
+//   display: flex;
+// }
+
+// .header .header__nav--deactivate {
+//   display: none;
+// }
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .ul__menu {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    height: 70px;
+    align-items: center;
+    flex-direction: row;
+    background-color: transparent;
+    font-size: 16px;
+    top: auto;
+    right: auto;
+    text-transform: capitalize;
+    gap: 10px;
+  }
+
+  .showMenu {
+    display: flex !important;
+  }
+}
+
+//Animacion de entrada del menu
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+//Animacion de salida del menu
+
+.slide-out-right {
+  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+}

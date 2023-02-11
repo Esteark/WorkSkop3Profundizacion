@@ -1,0 +1,65 @@
+@import "../../vars.scss";
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+  height: 400px;
+  color: $White;
+  background-color: $Black;
+}
+
+.footerdiv1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -80px;
+}
+
+.footerdiv2 {
+  display: flex;
+  flex-direction: column;
+  height: 10px;
+  margin-bottom: -5px;
+}
+
+.socialMedia1 {
+  display: none;
+}
+
+.socialMedia2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    padding: 10px 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerdiv1,
+  .footerdiv2 {
+    height: 130px;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .footerdiv2 {
+    margin-top: 75px;
+  }
+
+  .socialMedia1 {
+    display: none;
+  }
+
+  .socialMedia2 {
+    gap: 15px;
+    display: flex;
+  }
+}
