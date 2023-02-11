@@ -1,0 +1,21 @@
+.hamburger {
+  background: url("../../assets/icon-hamburger.svg");
+  background-size: cover;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  display: block;
+  cursor: pointer;
+  z-index: 11;
+}
+.closeIcon {
+  @extend .hamburger;
+  background: url("../../assets/icon-close.svg");
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
