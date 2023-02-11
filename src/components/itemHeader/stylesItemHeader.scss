@@ -1,0 +1,28 @@
+@import "../../vars.scss";
+
+.Section__itemHeader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .textoContainer {
+    width: 340px;
+    font-size: 40px;
+    margin-top: 50px;
+    border: 2px solid $White;
+    color: $White;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Section__itemHeader {
+    justify-content: start;
+    .textoContainer {
+      width: 50%;
+      padding: 30px;
+      font-size: 5vw;
+    }
+  }
+}

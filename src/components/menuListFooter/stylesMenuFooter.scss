@@ -1,0 +1,21 @@
+@import "../../vars.scss";
+
+.ul__footer {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  letter-spacing: 2px;
+  color: $White;
+}
+
+.ul__show {
+  @extend .ul__footer;
+  display: flex !important;
+}
+
+@media (min-width: 768px) {
+  .ul__footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
